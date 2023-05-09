@@ -33,9 +33,9 @@ public class Produto {
 		@NotBlank
 		private Long valorProduto;
 		
-		@OneToMany
-		@JsonIgnoreProperties("produto")
-		private Categoria categoria;
+		//@OneToMany
+		//@JsonIgnoreProperties("produto")
+		//private Categoria categoria;
 		
 		public String getNomeProduto() {
 			return nomeProduto;
