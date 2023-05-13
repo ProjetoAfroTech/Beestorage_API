@@ -1,21 +1,15 @@
 package com.beestorage.model;
 
 import java.util.List;
-
-import org.hibernate.annotations.Fetch;
-import org.hibernate.annotations.FetchMode;
-
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-//import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
@@ -34,7 +28,7 @@ public class UsuarioModel {
 	@NotNull(message = "O atributo nomeUsuario é obrigatório e não pode utilizar espaços em branco!")
 	public String nomeUsuario;
 	
-	//@Schema(example = "email@email.com")
+	@Schema(example = "email@email.com")
 	@NotNull(message = "O atributo usuário é obrigatório e não pode utilizar espaços em branco!") 
 	@Email(message="O atributo e-mail é obrigatório")
 	public String usuario;
