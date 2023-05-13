@@ -17,8 +17,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.beestorage.model.CategoriaModel;
 import com.beestorage.model.ProdutoModel;
+import com.beestorage.model.UsuarioModel;
+import com.beestorage.repository.CategoriaRepository;
 import com.beestorage.repository.ProdutoRepository;
+import com.beestorage.repository.UsuarioRepository;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
