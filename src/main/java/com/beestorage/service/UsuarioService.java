@@ -10,10 +10,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.teste.model.UsuarioLogin;
-import com.teste.model.UsuarioModel;
-import com.teste.repository.UsuarioRepository;
-
+import com.beestorage.model.UsuarioLogin;
+import com.beestorage.model.UsuarioModel;
+import com.beestorage.repository.UsuarioRepository;
 
 
 @Service

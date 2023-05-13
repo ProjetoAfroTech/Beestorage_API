@@ -10,8 +10,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.teste.model.UsuarioModel;
-import com.teste.repository.UsuarioRepository;
+import com.beestorage.model.UsuarioModel;
+import com.beestorage.repository.UsuarioRepository;
 
 
 @Service
